@@ -19,3 +19,26 @@
   background-size: 800% 800%;
   animation: gradientShift 100s ease infinite;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@media (max-width: 201px) {
+  html, body {
+    font-size: 12px;
+    overflow-x: hidden;
+  }
+
+  *, *::before, *::after {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+

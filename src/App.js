@@ -36,13 +36,24 @@ export default function App() {
   return (
     <div className="bg-white dark:bg-gray-900 min-h-screen text-gray-900 dark:text-gray-100 transition-colors duration-500">
       <Header theme={theme} toggleTheme={toggleTheme} />
-      <main>
-        <Hero />
+      <main className="max-w-ful overflow-hidden">
+
+        <section id="home">
+          <Hero />
+        </section>
         <JourneyFlow currentStage={currentStage} setCurrentStage={setCurrentStage} />
-        <StudentResources />
-        <Learning />
-        <Internships />
-        <Employment />
+        <section id="studentresources">
+          <StudentResources />
+        </section>
+        <section id="learning">
+          <Learning />
+        </section>
+        <section id="internships">
+          <Internships />
+        </section>
+        <section id="employment">
+          <Employment />
+        </section>
       </main>
       <Footer />
     </div>
